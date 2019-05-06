@@ -72,6 +72,14 @@ div[activated=y] {
 	display:none;
 }
 
+.bibbase_paper {
+  background: #ECEDEF;  /* change background color for papers */
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+
 .bibbase_group_whole[visible=n] {
 	display:none;
 }
@@ -272,4 +280,20 @@ br.bibbase_paper_content {
 .bibbase.well {
   background: #1751D8;
 }
+
+/* Code van Thom om header van publication types aan te passen:
+
+#group_article > .bibbase_group >span:first-of-type {
+    display: none;
+}
+
+#group_article > .bibbase_group >span.bibbase_group_count:before {
+    display: inline;
+    content: 'Articles';
+}
+
+*/
+
+
+
 
