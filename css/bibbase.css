@@ -40,8 +40,8 @@
 
 
 div.keywords {
-	text-align: center; 
-	padding-left: 3em;
+	text-align: left; /* change alignment of keywords */
+	padding-left: 0em; /* change left indentation of keywords */
 	padding-right: 3em;
 	display: inline-block;
 	}
