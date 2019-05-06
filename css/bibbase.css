@@ -76,6 +76,10 @@ div[activated=y] {
 	display:none;
 }
 
+.bibbase_paper_title {
+  color:#bd5d38;        /*change color of paper titles */ 
+}
+
 .bibbase_paper_title a {
 	font-weight: bold; 
 }
