@@ -43,15 +43,11 @@ div.keywords {
 	text-align: left; /* change alignment of keywords */
 	padding-left: 0em; /* change left indentation of keywords */
 	padding-right: 3em;
-	display: inline-block;
+	/* display: inline-block; */
 }
 
 div.filter-header {
   color:#1751D8;
-  font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 10px;
-
 }
 
 div.selection {
