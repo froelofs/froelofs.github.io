@@ -104,6 +104,7 @@ span.selection {
     margin:3px;
     text-align:center;
     line-height: 2em;
+    cursor: pointer;
 } 
 
 span[activated=y] {
@@ -262,5 +263,9 @@ br.bibbase_paper_content {
 .bibbase_paper_title a {
 	pointer-events: none; 
 	cursor: default; 
+}
+
+.bibbase.well {
+  background: #1751D8;
 }
 

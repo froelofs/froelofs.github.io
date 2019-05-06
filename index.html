@@ -24,7 +24,7 @@
   <!-- Custom style for bibbase -->
   <link href="css/bibbase.css" rel="stylesheet">
 
-  <!-- Scripts for bibbase publication list -->
+  <!-- Scripts for filtering bibbase publication list -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -66,6 +66,7 @@
               $(".bibbase_paper").each(function(index, objectpaper) {
                 if ($(objectpaper).attr("visible")=="n") {
                   $(obj).text().split(/\s*\/\s*/).map(function(key) {
+                    key = key.trim();
                     if ($(objectpaper).text().toLowerCase().includes(key.toLowerCase())) { $(objectpaper).attr("visible","y"); }
                     });
                   }
