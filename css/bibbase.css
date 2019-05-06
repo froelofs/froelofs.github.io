@@ -84,6 +84,10 @@ div[activated=y] {
 	display:none;
 }
 
+.bibbase_group_count {
+  display:none;
+}
+
 .bibbase_paper_title {
   color:#bd5d38;        /*change color of paper titles */ 
 }
