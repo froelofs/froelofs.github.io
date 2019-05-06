@@ -44,7 +44,15 @@ div.keywords {
 	padding-left: 0em; /* change left indentation of keywords */
 	padding-right: 3em;
 	display: inline-block;
-	}
+}
+
+div.filter-header {
+  color:#1751D8;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+}
 
 div.selection {
     /*background-color:#D3D3D3;*/
@@ -67,6 +75,7 @@ div[activated=y] {
     vertical-align:middle;
     font-size:80%;
 } 
+
 
 .bibbase_paper[visible=n] {
 	display:none;
