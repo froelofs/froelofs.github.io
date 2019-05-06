@@ -249,7 +249,7 @@ br.bibbase_paper_content {
 
 .bibbase_group {
 	font-size:110%;
-  font-weight: normal;
+  font-weight:normal!important;
 	color: #1751D8; 
   margin-top:0px;
   margin-left:0px;
