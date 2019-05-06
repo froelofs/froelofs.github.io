@@ -110,6 +110,10 @@ span[activated=y] {
 	background-color: #FFDC00; /* change background color of selected keyword */
 }
 
+span[activated=n]:hover {
+  background-color: #FFFF99; /* change background color of hovered keyword */
+}
+
 div.homelinks {
 	margin-left: 1em;
 	text-align: center;
