@@ -81,7 +81,7 @@ div[activated=y] {
   background: #ECEDEF;  /* change background color for papers */
   padding: 5px;
   margin: 5px;
-  border-radius: 10px;
+  border-radius: 10px;  /* rounded corners */
 }
 
 
@@ -288,6 +288,8 @@ br.bibbase_paper_content {
 }
 
 .bibbase.well {
+  padding: 5px;
+  border-radius: 10px;
   background: #F5F5F5;
 }
 
