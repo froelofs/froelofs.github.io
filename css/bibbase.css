@@ -94,7 +94,7 @@ div[activated=y] {
 }
 
 .bibbase_paper_title {
-  color:#1751D8;        /*change color of paper titles, old color was orange #bd5d38 */ 
+  color:#343a40;        /*change color of paper titles, now black, old color was orange #bd5d38 */ 
 }
 
 .bibbase_paper_title a {
@@ -248,11 +248,11 @@ br.bibbase_paper_content {
 }
 
 .bibbase_group {
-	font-size:110%;
-  font-weight:normal!important; /* change font weight of bibbase group headings */
-	color: #1751D8; 
-  margin-top:0px;
-  margin-left:0px;
+  /* same as h4 in resume.min.css except for font-family*/
+  font-size:110%;
+  font-weight:700;
+  text-transform:uppercase;
+  color:#343a40
 }
 
 .bibbase_group_whole .bibbase_group_whole .bibbase_group {

@@ -1252,8 +1252,144 @@ For more details, see my
             You may pick a keyword below to display a subset of (loosely) relevant entries: the keyword (or a close associate) may appear in the title, abstract, or metadata of the entry.</p>
           -->
 
+          <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="window">
+              Filter by type
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <span class="selection dropdown-item" activated=y><b>All</b>
+                <div style="display:none;">//</div>
+              </span>
+              <span class="selection dropdown-item" activated=n>Books
+                <div style="display:none;">/book{</div>
+              </span>
+              <span class="selection dropdown-item" activated=n>Surveys
+                <div style="display:none;">/survey/encyclopedia{</div>
+              </span>
+              <span class="selection dropdown-item" activated=n>Journal articles
+                <div style="display:none;">/article{</div>
+              </span>
+              <span class="selection dropdown-item" activated=n>Conference papers
+                <div style="display:none;">/inproceedings</div>
+              </span>
+              <span class="selection dropdown-item" activated=n>Book chapters
+                <div style="display:none;">/incollection</div>
+              </span>
+              <span class="selection dropdown-item" activated=n>Edited collections
+                <div style="display:none;">/edited collection</div>
+              </span>
+              <span class="selection dropdown-item" activated=n>Manuscripts
+                <div style="display:none;">/unpublished/submitted/to appear/in progress/in press</div>
+              </span>
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="viewport">
+              Filter by area
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <span class="selection" activated=y><b>All</b>
+                <div style="display:none;">//</div>
+              </span>
+              <span class="selection" activated=n>Theoretical linguistics
+                <div style="display:none;"></div>
+              </span>
+              <span class="selection" activated=n>Experimental linguistics
+                <div style="display:none;">/experiment</div>
+              </span>
+              <span class="selection" activated=n>Philosophical logic
+                <div style="display:none;"></div>
+              </span>
+              <span class="selection" activated=n>Artificial intelligence
+                <div style="display:none;"></div>
+              </span>
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="scrollparent">
+              Filter by empirical topic
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <span class="selection" activated=y><b>All</b>
+                <div style="display:none;">//</div>
+              </span>
+              <span class="selection" activated=n>Questions
+                <div style="display:none;">/question/interrogative</div>
+              </span>
+              <span class="selection" activated=n>Modality
+                <div style="display:none;">/modals/believe/wonder/attitude</div>
+              </span>
+              <span class="selection" activated=n>Attitude predicates
+                <div style="display:none;">/believe/wonder/surprise/embedding</div>
+              </span>
+              <span class="selection" activated=n>Quantification
+                <div style="display:none;">/quantifier</div>
+              </span>
+              <span class="selection" activated=n>Numerals
+                <div style="display:none;"></div>
+              </span>
+              <span class="selection" activated=n>Ignorance inferences
+                <div style="display:none;"></div>
+              </span>
+              <span class="selection" activated=n>Disjunction
+                <div style="display:none;">/disjunct</div>
+              </span>
+              <span class="selection" activated=n>Negation
+                <div style="display:none;">/n-word</div>
+              </span>
+              <span class="selection" activated=n>Comparatives
+                <div style="display:none;">/comparative</div>
+              </span>
+              <span class="selection" activated=n>Anaphora
+                <div style="display:none;"></div>
+              </span>
+              <span class="selection" activated=n>Ellipsis
+                <div style="display:none;"></div>
+              </span>
+              <span class="selection" activated=n>Answer particles
+                <div style="display:none;">/yes/polarity particle</div>
+              </span>
+              <span class="selection" activated=n>Negative polarity items
+                <div style="display:none;">/npi</div>
+              </span>
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="viewport">
+              Filter by foundational topic
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <span class="selection" activated=y><b>All</b>
+                <div style="display:none;">//</div>
+              </span>
+              <span class="selection" activated=n>Inquisitive semantics
+                <div style="display:none;">/inquisitive</div>
+              </span>
+              <span class="selection" activated=n>Dynamic semantics
+                <div style="display:none;">/dynamic</div>
+              </span>
+              <span class="selection" activated=n>Attention
+                <div style="display:none;"></div>
+              </span>
+              <span class="selection" activated=n>Highlighting
+                <div style="display:none;"></div>
+              </span>
+              <span class="selection" activated=n>Compositionality
+                <div style="display:none;">/composing</div>
+              </span>
+              <span class="selection" activated=n>Production/comprehension asymmetry
+                <div style="display:none;"></div>
+              </span>
+              <span class="selection" activated=n>Discourse commitments
+                <div style="display:none;"></div>
+              </span>
+            </div>
+          </div>
           
-            <div class="keywords">
+<!--             <div class="keywords">
               <div class="container">
                 <hr>
                 <div class="row">
@@ -1284,11 +1420,8 @@ For more details, see my
                     <span class="selection" activated=n>Edited collections
                       <div style="display:none;">/edited collection</div>
                     </span>
-                    <span class="selection" activated=n>In progress / in press
-                      <div style="display:none;">/submitted/to appear</div>
-                    </span>
-                    <span class="selection" activated=n>Unpublished
-                      <div style="display:none;"></div>
+                    <span class="selection" activated=n>Manuscripts
+                      <div style="display:none;">/unpublished/submitted/to appear/in progress/in press</div>
                     </span>
                   </div>
                 </div>
@@ -1321,7 +1454,7 @@ For more details, see my
                       Empirical topics:
                     </div>
                   </div>
-                  <div class="col-sm-10">
+                  <div class="col-sm-10 border border-primary">
                     <span class="selection" activated=n>Questions
                       <div style="display:none;">/question/interrogative</div>
                     </span>
@@ -1355,8 +1488,8 @@ For more details, see my
                     <span class="selection" activated=n>Ellipsis
                       <div style="display:none;"></div>
                     </span>
-                    <span class="selection" activated=n>Polarity particles
-                      <div style="display:none;">/yes/answer particle</div>
+                    <span class="selection" activated=n>Answer particles
+                      <div style="display:none;">/yes/polarity particle</div>
                     </span>
                     <span class="selection" activated=n>Negative polarity items
                       <div style="display:none;">/npi</div>
@@ -1396,7 +1529,7 @@ For more details, see my
                 </div>
                 <hr>
               </div>
-            </div>
+            </div> -->
           
               <!--<script src="https://bibbase.org/show?bib=http%3A%2F%2Fwww.emmanuel.chemla.free.fr%2FMaterial%2FEmmanuelChemlaBibliography.bib&filter=authors:Chemla&theme=simple&group0=type&group1=year&jsonp=1"></script>-->
             <script src="https://bibbase.org/show?bib=froelofs.github.io/bib/floris.bib&theme=simple&group0=year&fullnames=1&jsonp=1"></script>
