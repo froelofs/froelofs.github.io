@@ -55,13 +55,13 @@
         $(".menuelement").click(function(){
           ApplyMenu($(this).attr("name"));
         });
-        $(".selection").click(function(){
-          $(".selection").each(function(index,obj){ $(obj).attr("activated", "n"); });
+        $(".dropdown-item").click(function(){
+          $(".dropdown-item").each(function(index,obj){ $(obj).attr("activated", "n"); });
           $(this).attr("activated","y"); 
           $(".bibbase_paper").each(function(index, objectpaper) { 
           $(objectpaper).attr("visible", "n");
            });
-          $(".selection").each(function(ind, obj) {
+          $(".dropdown-item").each(function(ind, obj) {
             if($(obj).attr("activated")=="y") {
               $(".bibbase_paper").each(function(index, objectpaper) {
                 if ($(objectpaper).attr("visible")=="n") {
@@ -1257,133 +1257,136 @@ For more details, see my
               Filter by type
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <span class="selection dropdown-item" activated=y><b>All</b>
+              <span class="dropdown-item" activated=y><b>All</b>
                 <div style="display:none;">//</div>
               </span>
-              <span class="selection dropdown-item" activated=n>Books
+              <span class="dropdown-item" activated=n>Books
                 <div style="display:none;">/book{</div>
               </span>
-              <span class="selection dropdown-item" activated=n>Surveys
+              <span class="dropdown-item" activated=n>Surveys
                 <div style="display:none;">/survey/encyclopedia{</div>
               </span>
-              <span class="selection dropdown-item" activated=n>Journal articles
+              <span class="dropdown-item" activated=n>Journal articles
                 <div style="display:none;">/article{</div>
               </span>
-              <span class="selection dropdown-item" activated=n>Conference papers
+              <span class="dropdown-item" activated=n>Conference papers
                 <div style="display:none;">/inproceedings</div>
               </span>
-              <span class="selection dropdown-item" activated=n>Book chapters
+              <span class="dropdown-item" activated=n>Book chapters
                 <div style="display:none;">/incollection</div>
               </span>
-              <span class="selection dropdown-item" activated=n>Edited collections
+              <span class="dropdown-item" activated=n>Edited collections
                 <div style="display:none;">/edited collection</div>
               </span>
-              <span class="selection dropdown-item" activated=n>Manuscripts
+              <span class="dropdown-item" activated=n>PhD/MSc theses
+                <div style="display:none;">/phdthesis</div>
+              </span>
+              <span class="dropdown-item" activated=n>Manuscripts
                 <div style="display:none;">/unpublished/submitted/to appear/in progress/in press</div>
               </span>
             </div>
           </div>
 
           <div class="btn-group">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="viewport">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Filter by area
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <span class="selection" activated=y><b>All</b>
+              <span class="dropdown-item" activated=y><b>All</b>
                 <div style="display:none;">//</div>
               </span>
-              <span class="selection" activated=n>Theoretical linguistics
+              <span class="dropdown-item" activated=n>Theoretical linguistics
                 <div style="display:none;"></div>
               </span>
-              <span class="selection" activated=n>Experimental linguistics
+              <span class="dropdown-item" activated=n>Experimental linguistics
                 <div style="display:none;">/experiment</div>
               </span>
-              <span class="selection" activated=n>Philosophical logic
+              <span class="dropdown-item" activated=n>Philosophical logic
                 <div style="display:none;"></div>
               </span>
-              <span class="selection" activated=n>Artificial intelligence
+              <span class="dropdown-item" activated=n>Artificial intelligence
                 <div style="display:none;"></div>
               </span>
             </div>
           </div>
 
           <div class="btn-group">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="scrollparent">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Filter by empirical topic
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <span class="selection" activated=y><b>All</b>
+              <span class="dropdown-item" activated=y><b>All</b>
                 <div style="display:none;">//</div>
               </span>
-              <span class="selection" activated=n>Questions
+              <span class="dropdown-item" activated=n>Questions
                 <div style="display:none;">/question/interrogative</div>
               </span>
-              <span class="selection" activated=n>Modality
+              <span class="dropdown-item" activated=n>Modality
                 <div style="display:none;">/modals/believe/wonder/attitude</div>
               </span>
-              <span class="selection" activated=n>Attitude predicates
+              <span class="dropdown-item" activated=n>Attitude predicates
                 <div style="display:none;">/believe/wonder/surprise/embedding</div>
               </span>
-              <span class="selection" activated=n>Quantification
+              <span class="dropdown-item" activated=n>Quantification
                 <div style="display:none;">/quantifier</div>
               </span>
-              <span class="selection" activated=n>Numerals
+              <span class="dropdown-item" activated=n>Numerals
                 <div style="display:none;"></div>
               </span>
-              <span class="selection" activated=n>Ignorance inferences
+              <span class="dropdown-item" activated=n>Ignorance inferences
                 <div style="display:none;"></div>
               </span>
-              <span class="selection" activated=n>Disjunction
+              <span class="dropdown-item" activated=n>Disjunction
                 <div style="display:none;">/disjunct</div>
               </span>
-              <span class="selection" activated=n>Negation
+              <span class="dropdown-item" activated=n>Negation
                 <div style="display:none;">/n-word</div>
               </span>
-              <span class="selection" activated=n>Comparatives
+              <span class="dropdown-item" activated=n>Comparatives
                 <div style="display:none;">/comparative</div>
               </span>
-              <span class="selection" activated=n>Anaphora
+              <span class="dropdown-item" activated=n>Anaphora
                 <div style="display:none;"></div>
               </span>
-              <span class="selection" activated=n>Ellipsis
+              <span class="dropdown-item" activated=n>Ellipsis
                 <div style="display:none;"></div>
               </span>
-              <span class="selection" activated=n>Answer particles
+              <span class="dropdown-item" activated=n>Answer particles
                 <div style="display:none;">/yes/polarity particle</div>
               </span>
-              <span class="selection" activated=n>Negative polarity items
+              <span class="dropdown-item" activated=n>Negative polarity items
                 <div style="display:none;">/npi</div>
               </span>
             </div>
           </div>
 
           <div class="btn-group">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-boundary="viewport">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Filter by foundational topic
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <span class="selection" activated=y><b>All</b>
+              <span class="dropdown-item" activated=y><b>All</b>
                 <div style="display:none;">//</div>
               </span>
-              <span class="selection" activated=n>Inquisitive semantics
+              <span class="dropdown-item" activated=n>Inquisitive semantics
                 <div style="display:none;">/inquisitive</div>
               </span>
-              <span class="selection" activated=n>Dynamic semantics
+              <span class="dropdown-item" activated=n>Dynamic semantics
                 <div style="display:none;">/dynamic</div>
               </span>
-              <span class="selection" activated=n>Attention
+              <span class="dropdown-item" activated=n>Attentional semantics
+                <div style="display:none;">/attention</div>
+              </span>
+              <span class="dropdown-item" activated=n>Highlighting
                 <div style="display:none;"></div>
               </span>
-              <span class="selection" activated=n>Highlighting
-                <div style="display:none;"></div>
-              </span>
-              <span class="selection" activated=n>Compositionality
+              <span class="dropdown-item" activated=n>Compositionality
                 <div style="display:none;">/composing</div>
               </span>
-              <span class="selection" activated=n>Production/comprehension asymmetry
+              <span class="dropdown-item" activated=n>Production/comprehension asymmetry
                 <div style="display:none;"></div>
               </span>
-              <span class="selection" activated=n>Discourse commitments
+              <span class="dropdown-item" activated=n>Discourse commitments
                 <div style="display:none;"></div>
               </span>
             </div>
