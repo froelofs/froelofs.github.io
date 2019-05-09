@@ -216,6 +216,11 @@ ul.menulist {
 }
 
 
+.btn-group {
+  padding-top: 10px;
+}
+
+
 span.bibbase_icon_text {
 	display:inline-block;
 }
