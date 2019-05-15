@@ -303,18 +303,7 @@ br.bibbase_paper_content {
   background: #F5F5F5;
 }
 
-.bg {
-  /* The image used */
-  background-image: backgrounds/background-blue.jpg;
 
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* Code van Thom om header van publication types aan te passen:
 
