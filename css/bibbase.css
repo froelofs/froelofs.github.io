@@ -38,6 +38,18 @@
     text-decoration: none;
   }
 
+#publicationForm {
+  background: #ECEDEF;  /* change background color for selection form */
+  padding: 15px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+  border-radius: 10px;  /* rounded corners */
+}
+
+label {
+  color: #495057;
+}
 
 div.keywords {
 	text-align: left; /* change alignment of keywords */
@@ -80,7 +92,9 @@ div[activated=y] {
 .bibbase_paper {
   background: #ECEDEF;  /* change background color for papers */
   padding: 5px;
-  margin: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
   border-radius: 10px;  /* rounded corners */
 }
 
