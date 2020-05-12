@@ -165,58 +165,6 @@
       }
       return counter;  // for some reason that I don't understand each bibbase_paper appears twice, so we have to divide by 2 here
     }
-
-
-
-    // Below is an old function to update the pubList based on selected dropdown items. This is close to what Emmanuel Chemla has on his website.
-    //
-    // $(document).ready(function() {
-    //     $(".dropdown-item").click(function() {
-    //       $(".dropdown-item").each(function(index,obj) { 
-    //         $(obj).attr("activated", "n"); 
-    //       });
-    //       $(this).attr("activated","y"); 
-    //       $(".bibbase_paper").each(function(index, objectpaper) { 
-    //         $(objectpaper).attr("visible", "n");
-    //       });
-    //       $(".dropdown-item").each(function(ind, obj) {
-    //         if($(obj).attr("activated")=="y") {
-    //           $(".bibbase_paper").each(function(index, objectpaper) {
-    //             if ($(objectpaper).attr("visible")=="n") {
-    //               $(obj).text().split(/\s*\/\s*/).forEach(function(key) {
-    //                 key = key.trim();
-    //                 if ($(objectpaper).text().toLowerCase().includes(key.toLowerCase())) { 
-    //                   $(objectpaper).attr("visible","y"); 
-    //                 }
-    //               });
-    //             }
-    //           });
-    //         }
-    //       });
-    //     $(".bibbase_group_whole").each(function(ind, group) {
-    //       $(group).attr("visible", "n"); 
-    //     });
-    //     $(".bibbase_group_whole").each(function(ind, group) {
-    //       $(group).find(".bibbase_paper").each(function(index, paper) {
-    //         if ($(paper).attr("visible")!="n") { 
-    //           $(group).attr("visible", "y"); 
-    //         }
-    //       });
-    //     });
-    //   });
-    // });
-
-
-    // Below are old functions to reset all pubSelect elements
-
-    // function resetAllSelections() {
-    //   document.getElementById("publicationForm").forEach(resetSelectedOption);
-    // }
-    // function resetSelectedOption(list) {
-    //   list.options[0].selected = 'selected';
-    // }
-    
-
   </script>
 
 </head>
@@ -237,6 +185,12 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#beyond truth-conditions">Beyond truth-conditions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#beyond spoken languages">Beyond spoken language</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#bio">Short Bio</a>
@@ -394,7 +348,7 @@
         </p>
 
         <p class="lead mb-4">
-          Not only can we scientists benefit from investigating sign languages; we also have an important role to play in diminishing the language barrier between deaf and hearing people. In particular, deeper insights into the grammar of sign languages can improve the <b>training of sign language interpreters</b> and provide a foundation for <b>text-to-sign machine translation technology</b>.
+          Not only can we scientists benefit from investigating sign languages; we also have an important role to play in diminishing the language barrier between deaf and hearing people. In particular, deeper insights into the grammar of sign languages can improve the training of <b>sign language interpreters</b> and provide a foundation for <b>text-to-sign machine translation technology</b>.
         </p>
 
         <p class="lead mb-4">
