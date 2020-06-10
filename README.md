@@ -1,4 +1,4 @@
-This is my personal website. It is based on the [resume](https://startbootstrap.com/template-overviews/resume/) template created by [Start Bootstrap](http://startbootstrap.com/).
+This is my personal website. It is based on the [resume](https://startbootstrap.com/template-overviews/resume/) template provided by [Start Bootstrap](http://startbootstrap.com/).
 
 Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
